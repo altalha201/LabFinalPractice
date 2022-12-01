@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     public void register(View view) {
         String name = name_ET.getText().toString();
         String email = email_ET.getText().toString();
@@ -56,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             myIntent.putExtra("name", name);
             myIntent.putExtra("email", email);
             myIntent.putExtra("dob", dateOfBirth);
+            myIntent.putExtra("gender", gender);
             startActivity(myIntent);
         }
     }
