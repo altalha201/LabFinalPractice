@@ -58,4 +58,9 @@ public class Dashboard extends AppCompatActivity {
         Intent myIntent = new Intent(this, ListViewActivity.class);
         startActivity(myIntent);
     }
+
+    public void GotoPractice(View view) {
+        Intent myIntent = new Intent(this, OMG.class);
+        startActivity(myIntent);
+    }
 }

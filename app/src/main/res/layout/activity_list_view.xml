@@ -8,9 +8,19 @@
     android:padding="10dp"
     tools:context=".ListViewActivity">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:onClick="showList"
+        android:text="Show the list"
+        tools:ignore="HardcodedText" />
+
     <ListView
         android:id="@+id/lv_ID"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
 
 </LinearLayout>

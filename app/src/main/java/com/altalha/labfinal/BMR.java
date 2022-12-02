@@ -26,6 +26,7 @@ public class BMR extends Fragment {
         check_Btn = containerView.findViewById(R.id.check_btn);
         rG = containerView.findViewById(R.id.radio_group_id);
 
+
         check_Btn.setOnClickListener(v -> {
             if (rG.getCheckedRadioButtonId() != -1) {
                 RadioButton rb = containerView.findViewById(rG.getCheckedRadioButtonId());

@@ -2,6 +2,8 @@ package com.altalha.labfinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +15,7 @@ public class ListViewActivity extends AppCompatActivity {
 
     String[] names = {"Talha", "Uday", "Apurbo"};
     ListView lv;
+    Boolean show = false;
 
 
     @Override
@@ -32,5 +35,16 @@ public class ListViewActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void showList(View view) {
+        if (show) {
+            lv.setVisibility(View.INVISIBLE);
+            show = false;
+        }
+        else {
+            lv.setVisibility(View.VISIBLE);
+            show = true;
+        }
     }
 }
