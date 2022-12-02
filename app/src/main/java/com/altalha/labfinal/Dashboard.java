@@ -35,6 +35,7 @@ public class Dashboard extends AppCompatActivity {
     }
 
     public void changeFrame(View view) {
+
         if (view.getId() == R.id.bmi_id) {
             transaction(new BMI());
         }
@@ -54,7 +55,7 @@ public class Dashboard extends AppCompatActivity {
     }
 
     public void listGo(View view) {
-        Intent myIntent = new Intent(this, ListView.class);
+        Intent myIntent = new Intent(this, ListViewActivity.class);
         startActivity(myIntent);
     }
 }

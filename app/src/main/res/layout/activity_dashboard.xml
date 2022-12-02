@@ -56,6 +56,7 @@
             android:textAllCaps="false"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:onClick="changeFrame"
             tools:ignore="HardcodedText"
             style="?android:attr/buttonBarButtonStyle" />
 
@@ -67,6 +68,7 @@
             android:text="Recent BMI"
             android:textAllCaps="false"
             android:textSize="18sp"
+            android:onClick="changeFrame"
             android:textStyle="bold"
             tools:ignore="HardcodedText"
             style="?android:attr/buttonBarButtonStyle" />
